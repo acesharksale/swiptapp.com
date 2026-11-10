@@ -1,0 +1,89 @@
+/* swiptapp.com: the app's own look (packages/swipt_ui/lib/src/colors.dart), dark only. */
+:root {
+  --background: #0d1214;
+  --surface: #151c1f;
+  --surface-high: #1e272b;
+  --outline: #29343a;
+  --teal: #2dd4bf;
+  --teal-light: #8df0e1;
+  --on-teal: #032b27;
+  --text: #f1f5f6;
+  --text-muted: #93a2a8;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--teal); }
+a:hover { color: var(--teal-light); }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+header.site {
+  border-bottom: 1px solid var(--outline);
+}
+header.site .wrap {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 64px; flex-wrap: wrap;
+}
+.brand {
+  display: flex; align-items: center; gap: 10px;
+  color: var(--text); text-decoration: none; font-weight: 700; font-size: 20px;
+}
+.brand img { width: 32px; height: 32px; border-radius: 8px; }
+nav.site a { color: var(--text-muted); text-decoration: none; margin-left: 18px; font-size: 15px; }
+nav.site a:first-child { margin-left: 0; }
+nav.site a:hover, nav.site a[aria-current="page"] { color: var(--text); }
+
+main { padding: 40px 0 56px; }
+
+h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.01em; }
+h2 { font-size: 24px; margin: 44px 0 12px; }
+h3 { font-size: 18px; margin: 28px 0 6px; }
+p, li { color: var(--text); }
+.muted { color: var(--text-muted); }
+.lead { font-size: 19px; color: var(--text-muted); max-width: 38em; }
+
+.hero { text-align: center; padding-top: 16px; }
+.hero img.mark { width: 96px; height: 96px; border-radius: 22px; margin-bottom: 20px; }
+.hero .lead { margin: 0 auto; }
+.tagline { color: var(--teal); font-weight: 600; margin: 0 0 18px; }
+
+.downloads {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px;
+  margin: 32px 0 8px;
+}
+.button {
+  display: block; padding: 14px 16px; border-radius: 14px; text-align: center;
+  text-decoration: none; font-weight: 600; border: 1px solid var(--outline);
+  background: var(--surface); color: var(--text);
+}
+.button small { display: block; font-weight: 400; color: var(--text-muted); font-size: 13px; }
+.button.primary { background: var(--teal); border-color: var(--teal); color: var(--on-teal); }
+.button.primary small { color: var(--on-teal); opacity: 0.8; }
+a.button:hover { border-color: var(--teal); color: var(--text); }
+a.button.primary:hover { background: var(--teal-light); color: var(--on-teal); }
+.button[aria-disabled="true"] { opacity: 0.6; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px; }
+.card { background: var(--surface); border: 1px solid var(--outline); border-radius: 16px; padding: 18px; }
+.card h3 { margin: 0 0 6px; }
+.card p { margin: 0; color: var(--text-muted); font-size: 15px; }
+
+ol.steps { padding-left: 22px; }
+ol.steps li { margin: 8px 0; }
+
+.prose ul, .prose ol { padding-left: 22px; }
+.prose li { margin: 6px 0; }
+
+footer.site { border-top: 1px solid var(--outline); padding: 24px 0 40px; color: var(--text-muted); font-size: 14px; }
+footer.site a { color: var(--text-muted); }
+footer.site a:hover { color: var(--text); }
