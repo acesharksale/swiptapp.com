@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support · Swipt</title>
-<meta name="description" content="Help with Swipt: pairing, finding your computer, where files go, free files and restoring a purchase.">
+<meta name="description" content="Help with Swipt: getting started, fixing connection and pairing problems, where files go, free files and restoring a purchase.">
 <link rel="icon" href="/icon.png">
 <link rel="apple-touch-icon" href="/icon.png">
 <link rel="stylesheet" href="/style.css">
@@ -17,31 +17,92 @@
 
 <main><div class="wrap prose">
   <h1>Support</h1>
-  <p>Need help? Write to <a href="mailto:hello@swiptapp.com">hello@swiptapp.com</a>. Tell us which phone and computer you use, and what you see on the screen. A screenshot helps.</p>
+  <p>Most problems have a quick fix below. If yours doesn't, write to <a href="mailto:hello@swiptapp.com">hello@swiptapp.com</a>. Tell us which phone and computer you use and what you see on the screen; a screenshot helps.</p>
+  <p class="muted">On this page: <a href="#start">Getting started</a> · <a href="#connection">Connection problems</a> · <a href="#pairing">Pairing problems</a> · <a href="#transfers">Transfer problems</a> · <a href="#questions">Questions and answers</a></p>
 
-  <h2>Questions and answers</h2>
-
-  <h3>How do I start?</h3>
+  <h2 id="start">Getting started</h2>
   <ol>
     <li>Install Swipt on your computer (Windows PC or Mac) and open it.</li>
     <li>Install Swipt on your phone and open it.</li>
-    <li>On the computer, click <strong>Pair a phone</strong>. On the phone, tap <strong>Pair with your computer</strong> and scan the QR code. Confirm on the computer.</li>
+    <li>On the computer, click <strong>Pair a phone</strong>. On the phone, tap <strong>Pair with your computer</strong> and scan the QR code. Click <strong>Pair</strong> on the computer.</li>
   </ol>
   <p>That's it. From then on, pick photos or files on your phone and swipe up to send. You can also use <strong>Share ▸ Swipt</strong> in Photos or any other app.</p>
 
-  <h3>My phone can't find my computer</h3>
+  <h2 id="connection">Connection problems</h2>
+
+  <h3>"Can't find" your computer</h3>
   <ul>
-    <li>Both must be on the <strong>same Wi-Fi</strong>. A phone on mobile data or a guest network can't reach your computer.</li>
-    <li>Swipt must be <strong>open on the computer</strong> (it can sit in the tray or menu bar with its window closed).</li>
-    <li><strong>iPhone:</strong> Settings ▸ Privacy &amp; Security ▸ Local Network ▸ Swipt must be on.</li>
-    <li><strong>Windows:</strong> if Windows asked whether to allow Swipt on the network, it must be allowed. If Swipt shows "Phones can't reach this PC", follow what it says. Usually your Wi-Fi is set to <em>Public</em> and needs to be <em>Private</em>: Settings ▸ Network &amp; internet ▸ Wi-Fi ▸ your network ▸ Private network.</li>
-    <li>Some routers keep devices apart ("client isolation" or "AP isolation", often on guest networks). Turn it off, or use your main network.</li>
+    <li><strong>Is Swipt running on the computer?</strong> It can sit in the tray (Windows, by the clock) or the menu bar (Mac) with its window closed, but it must be running. If you quit it, open it again.</li>
+    <li><strong>Are both on the same Wi-Fi?</strong> Not mobile data, not a guest network. Two Wi-Fi names from the same router (for example 2.4 GHz and 5 GHz) are fine.</li>
+    <li><strong>Is the computer awake?</strong> A sleeping computer can't receive.</li>
+    <li><strong>Guest, office, school and hotel networks</strong> often stop devices talking to each other. Try your home Wi-Fi, or your phone's hotspot with the computer connected to it.</li>
+    <li><strong>A VPN</strong> on the phone or the computer can get in the way. Pause it and try again.</li>
+    <li>Some routers keep devices apart ("client isolation" or "AP isolation"). Turn it off in the router's settings, or use your main network.</li>
   </ul>
+
+  <h3>"… is blocking Swipt"</h3>
+  <p>Your phone reached the computer, but the computer's firewall didn't let Swipt in.</p>
+  <ul>
+    <li><strong>Windows:</strong> Swipt shows how to fix it in its window ("Phones can't reach this PC"). Usually your Wi-Fi is set to <em>Public</em>: open Settings ▸ Network &amp; internet ▸ Wi-Fi ▸ your network and choose <strong>Private network</strong>. Or allow Swipt in the firewall: Control Panel ▸ Windows Defender Firewall ▸ Allow an app through firewall ▸ Change settings ▸ tick <strong>Private</strong> and <strong>Public</strong> next to Swipt.</li>
+    <li><strong>Mac:</strong> System Settings ▸ Network ▸ Firewall ▸ Options: make sure Swipt is set to allow incoming connections.</li>
+  </ul>
+
+  <h3>"Let Swipt find …" (iPhone)</h3>
+  <p>Swipt isn't allowed to look on your Wi-Fi. Open Settings ▸ Privacy &amp; Security ▸ Local Network and turn on <strong>Swipt</strong>.</p>
+
+  <h3>"Connect to Wi-Fi" or "Different network"</h3>
+  <p>Your phone is on mobile data or on another Wi-Fi than the computer. Connect both to the same Wi-Fi.</p>
+
+  <h3>Windows says "Windows protected your PC" when installing</h3>
+  <p>That's Windows being careful with new downloads. Click <strong>More info</strong>, then <strong>Run anyway</strong>. When Swipt first opens, click <strong>Allow</strong> if Windows asks about the network, so your phone can reach it.</p>
+
+  <h2 id="pairing">Pairing problems</h2>
+
+  <h3>"Code expired"</h3>
+  <p>A pairing code works once and for 5 minutes. On the computer, click <strong>Pair a phone</strong> again for a new code and scan that one.</p>
+
+  <h3>"Not paired"</h3>
+  <p>Nobody clicked <strong>Pair</strong> on the computer within a minute (or it was declined). Scan a new code and confirm on the computer.</p>
+
+  <h3>"That's not a pairing code"</h3>
+  <p>Scan the QR code shown in Swipt's window on your computer (<strong>Pair a phone</strong>). If scanning doesn't work, click <strong>Copy code as text</strong> on the computer, get the text to your phone, and tap <strong>Enter the code instead</strong>.</p>
+
+  <h3>The camera doesn't open</h3>
+  <p>Allow Swipt to use the camera in your phone's settings, or tap <strong>Enter the code instead</strong> and paste the code.</p>
+
+  <h3>"Not paired anymore"</h3>
+  <p>The phone was removed on the computer (or the computer's Swipt was reset). Pair again.</p>
+
+  <h2 id="transfers">Transfer problems</h2>
+
+  <h3>"Connection lost. Reconnecting…"</h3>
+  <p>The Wi-Fi dropped for a moment. Keep both devices on the Wi-Fi: Swipt continues where it stopped. If it gives up, tap <strong>Try again</strong>; it doesn't start over.</p>
+
+  <h3>Files from the computer don't arrive on the phone</h3>
+  <ul>
+    <li>Open Swipt on the phone: it picks files up while it's open. Until then the computer shows "Waiting for …".</li>
+    <li>Both need to be on the same Wi-Fi.</li>
+    <li>If the phone has no free files left, the files wait on the computer until you unlock unlimited transfers on the phone.</li>
+  </ul>
+
+  <h3>"… is full"</h3>
+  <p>There isn't enough space on the computer. Free some up, or choose another save folder in Swipt ▸ Settings, then try again.</p>
+
+  <h3>"Couldn't get …" (iPhone)</h3>
+  <p>The photo is probably stored only in iCloud. Connect to the internet so your iPhone can download it, then try again.</p>
+
+  <h3>Swipt shows only some of my photos</h3>
+  <p>You gave Swipt access to selected photos only. Tap <strong>Change</strong> above the photos to pick others, or allow all photos in your phone's settings.</p>
+
+  <h3>I can't find received files</h3>
+  <p>See <a href="#where">Where do my files go?</a> below.</p>
+
+  <h2 id="questions">Questions and answers</h2>
 
   <h3>How do I send files from my computer to my phone?</h3>
   <p>Drag files onto the Swipt window on your computer (or click <strong>Send to phone</strong>) and choose your phone. They arrive as soon as Swipt is open on your phone.</p>
 
-  <h3>Where do my files go?</h3>
+  <h3 id="where">Where do my files go?</h3>
   <ul>
     <li><strong>Computer:</strong> Downloads ▸ Swipt (you can change it in Settings).</li>
     <li><strong>iPhone:</strong> photos and videos go to Photos; other files to the Files app ▸ On My iPhone ▸ Swipt.</li>
@@ -52,7 +113,7 @@
   <p>Each phone can send or receive <strong>100 files for free</strong> (one file is one transfer, whatever its size). After that, you can unlock <strong>unlimited transfers forever with one payment</strong>. No subscription, no ads, no account. The Swipt apps for Windows and Mac are free, and your phone's free files count for both directions.</p>
 
   <h3>I bought Unlimited Transfers. How do I get it on a new phone?</h3>
-  <p>Open Swipt ▸ Settings (the gear) ▸ <strong>Restore purchase</strong>. Use the same Apple ID or Google account you bought it with.</p>
+  <p>Open Swipt ▸ Settings (the gear) ▸ <strong>Restore purchase</strong>, with the same Apple ID or Google account you bought it with, and an internet connection. A purchase waiting for approval (for example Ask to Buy) unlocks by itself once it's approved.</p>
 
   <h3>Is it private?</h3>
   <p>Yes. Files go straight from your phone to your computer over your Wi-Fi, encrypted. They never touch the internet or any server, and Swipt collects no data. See the <a href="/privacy/">privacy policy</a>.</p>

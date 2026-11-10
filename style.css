@@ -62,10 +62,13 @@ p, li { color: var(--text); }
   margin: 32px 0 8px;
 }
 .button {
-  display: block; padding: 14px 16px; border-radius: 14px; text-align: center;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  padding: 14px 16px; border-radius: 14px;
   text-decoration: none; font-weight: 600; border: 1px solid var(--outline);
   background: var(--surface); color: var(--text);
 }
+.button > span { text-align: left; }
+.button svg { width: 26px; height: 26px; flex: none; fill: currentColor; }
 .button small { display: block; font-weight: 400; color: var(--text-muted); font-size: 13px; }
 .button.primary { background: var(--teal); border-color: var(--teal); color: var(--on-teal); }
 .button.primary small { color: var(--on-teal); opacity: 0.8; }
